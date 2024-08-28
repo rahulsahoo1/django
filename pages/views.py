@@ -22,3 +22,7 @@ def home(request):
 def product(request):
     product = Product.objects.all().values()
     return JsonResponse({'message':list(product)})
+
+def loginSystem(request):
+    
+    return render(request, 'loginsystem.html')
